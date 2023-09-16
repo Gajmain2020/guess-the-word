@@ -62,7 +62,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](//write link here)
+- [Live Demo Link](https://gajmain2020.github.io/guess-the-word/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
