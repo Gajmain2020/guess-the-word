@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  background-color: aqua;
+  background-image: url(background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 90%;
+  padding: 25px 20px;
+  border-radius: 40px;
+  background: rgba(38, 92, 89, 0.401);
+  backdrop-filter: blur(12.5px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.container h1 {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 15px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.container .content {
+  margin-top: 15px;
+}
+
+.typing-input {
+  z-index: -999;
+  opacity: 0;
+  position: absolute;
+}
+
+.content .input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input input {
+  width: 55px;
+  height: 56px;
+  margin: 3px;
+  border: 1px solid aqua;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: 500;
+  color: aqua;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.input input:first-child {
+  margin-left: 0px;
+}
+
+.detail p {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #002123;
+}
+
+.detail p span {
+  font-weight: 500;
+  margin-left: 5px;
+  color: aqua;
+}
+
+.content .reset-btn {
+  width: 100%;
+  color: #fff;
+  background-color: #005f65;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.content .reset-btn:hover {
+  color: #005f65;
+  background-color: aqua;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 450px;
+    padding: 35px;
+  }
+
+  .container h1 {
+    font-size: 1.5rem;
+    color: #000000;
+    border-color: rgb(6, 123, 123);
+  }
+
+  .input input {
+    color: #005f65;
+  }
+
+  .detail p {
+    font-size: 1.1rem;
+  }
+
+  .detail p span {
+    color: #fff;
+  }
+
+  .content .reset-btn {
+    font-size: 1rem;
+  }
+}
+
+.footer {
+  display: flex;
+  width: inherit;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 0;
+}
+
+a {
+  color: rgb(88, 40, 40);
+  text-decoration: none;
+  transition: 300ms;
+}
+a:hover {
+  color: black;
+  font-size: 120%;
+  text-decoration: underline;
+}
